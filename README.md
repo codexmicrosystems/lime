@@ -7,7 +7,7 @@ Lime is a Kotlin/Java library that allows for ease of programming for the Limeli
 Step 1, add the JitPack repository to your gradle build file.
 ```gradle
 repositories {
-	maven { url 'https://jitpack.io' }
+	maven { url = uri("https://jitpack.io") }
 }
 ```
 
