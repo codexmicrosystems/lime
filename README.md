@@ -1,7 +1,7 @@
 ![(Lime Logo)](https://raw.githubusercontent.com/codexmicrosystems/brand-guidelines/main/logo/lime-logo.png)
 
 ### Description
-Lime is a Kotlin/Java library that allows for ease of control of the Limelight Vision camera for FIRST Robotics Competition.
+Lime is a Kotlin/Java library that allows for ease of programming for the Limelight Vision camera for FIRST Robotics Competition.
 
 ### Usage
 Step 1, add the JitPack repository to your gradle build file.
