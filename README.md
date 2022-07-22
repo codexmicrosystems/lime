@@ -4,23 +4,6 @@
 Lime is a Kotlin/Java library that allows for ease of programming for the Limelight Vision camera for FIRST Robotics Competition.
 
 ### Usage
-
-#### Groovy
-Step 1, add the JitPack repository to your gradle build file.
-```gradle
-repositories {
-	maven { url 'https://jitpack.io' }
-}
-```
-
-Step 2, add the dependency to your gradle build file.
-```gradle
-dependencies {
-	implementation 'com.github.codexmicrosystems:lime:main-SNAPSHOT'
-}
-```
-
-#### Kotlin
 Step 1, add the JitPack repository to your gradle build file.
 ```gradle
 repositories {
