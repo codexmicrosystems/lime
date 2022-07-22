@@ -8,9 +8,6 @@ plugins {
     `java-library`
 }
 
-group = "com.github.codexmicrosystems"
-version = "1.0.0"
-
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
@@ -36,4 +33,16 @@ dependencies {
     api("org.apache.commons:commons-math3:3.6.1")
 
     implementation(files("libs/ntcore-java-2019.4.1.jar"))
+}
+
+publishing {
+  publications {
+    create<MavenPublication>("maven") {
+      groupId = "com.github.codexmicrosystems"
+      artifactId = "lime"
+      version = "1.0.0"
+
+      from(components["java"])
+    }
+  }
 }
