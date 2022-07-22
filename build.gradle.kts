@@ -38,7 +38,7 @@ dependencies {
 publishing {
   publications {
     create<MavenPublication>("maven") {
-      groupId = "com.github.codexmicrosystems"
+      groupId = "com.github.zagdrath"
       artifactId = "lime"
       version = "1.0.0"
 

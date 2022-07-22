@@ -1,7 +1,7 @@
 /*
  * @(#)Lime.kt
  *
- * Copyright (C) 2022 Codex Microsystems All rights reserved. This work is
+ * Copyright (C) 2022 Cody L. Wellman All rights reserved. This work is
  * licensed under the terms of the MIT license which can be found in the
  * root directory of this project.
  *
@@ -11,15 +11,15 @@
  * Updated: July 21, 2022
  */
 
-package systems.codexmicro.lime
+package xyz.zagdrath.lime
 
-import systems.codexmicro.lime.util.CameraMode
-import systems.codexmicro.lime.util.CameraStream
-import systems.codexmicro.lime.util.Constants
-import systems.codexmicro.lime.util.LEDMode
-import systems.codexmicro.lime.util.LimeMath
-import systems.codexmicro.lime.util.Pipeline
-import systems.codexmicro.lime.util.SnapshotMode
+import xyz.zagdrath.lime.util.CameraMode
+import xyz.zagdrath.lime.util.CameraStream
+import xyz.zagdrath.lime.util.Constants
+import xyz.zagdrath.lime.util.LEDMode
+import xyz.zagdrath.lime.util.LimeMath
+import xyz.zagdrath.lime.util.Pipeline
+import xyz.zagdrath.lime.util.SnapshotMode
 
 class Lime(tableName: String) {
     private var limeTable: LimeTable

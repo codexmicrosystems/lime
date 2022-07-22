@@ -1,7 +1,7 @@
 /*
  * @(#)Constants.kt
  *
- * Copyright (C) 2022 Codex Microsystems All rights reserved. This work is
+ * Copyright (C) 2022 Cody L. Wellman All rights reserved. This work is
  * licensed under the terms of the MIT license which can be found in the
  * root directory of this project.
  *
@@ -11,7 +11,7 @@
  * Updated: July 21, 2022
  */
 
-package systems.codexmicro.lime.util
+package xyz.zagdrath.lime.util
 
 class Constants {
     val CAPTURE_LATENCY: Double = 11.0

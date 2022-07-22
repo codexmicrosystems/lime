@@ -1,4 +1,4 @@
-![(Lime Logo)](https://raw.githubusercontent.com/codexmicrosystems/brand-guidelines/main/logo/lime-logo.png)
+![(Lime Logo)](https://raw.githubusercontent.com/zagdrath/storage/master/lime-logo.png)
 
 ### Description
 Lime is a Kotlin/Java library that allows for ease of programming for the Limelight Vision camera for FIRST Robotics Competition.
@@ -14,9 +14,9 @@ repositories {
 Step 2, add the dependency to your gradle build file.
 ```gradle
 dependencies {
-	implementation("com.github.codexmicrosystems:lime:main-SNAPSHOT")
+	implementation("com.github.zagdrath:lime:main-SNAPSHOT")
 }
 ```
 
 ### Licensing
-Copyright © 2022 Codex Microsystems. All rights reserved. This work is licensed under the terms of the MIT license which can be found in the root directory of this project.
+Copyright © 2022 Cody L. Wellman. All rights reserved. This work is licensed under the terms of the MIT license which can be found in the root directory of this project.
