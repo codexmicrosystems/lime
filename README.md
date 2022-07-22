@@ -7,13 +7,15 @@ Lime is a Kotlin/Java library that allows for ease of programming for the Limeli
 <details>
 <summary>Groovy</summary>
 Step 1, add the JitPack repository to your gradle build file.
+<br>
 ```gradle
 repositories {
 	maven { url 'https://jitpack.io' }
 }
 ```
-
+<br>
 Step 2, add the dependency to your gradle build file.
+<br>
 ```gradle
 dependencies {
 	implementation 'com.github.codexmicrosystems:lime:main-SNAPSHOT'
@@ -24,13 +26,15 @@ dependencies {
 <details>
 <summary>Kotlin</summary>
 Step 1, add the JitPack repository to your gradle build file.
+<br>
 ```gradle
 repositories {
 	maven { url = uri("https://jitpack.io") }
 }
 ```
-
+<br>
 Step 2, add the dependency to your gradle build file.
+<br>
 ```gradle
 dependencies {
 	implementation("com.github.codexmicrosystems:lime:main-SNAPSHOT")
