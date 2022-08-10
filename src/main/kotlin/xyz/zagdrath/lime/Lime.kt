@@ -8,23 +8,22 @@
  * Author: Cody L. Wellman <cody@codexmicro.systems>
  *
  * Created: July 21, 2022
- * Updated: July 21, 2022
+ * Updated: August 10, 2022
  */
 
 package xyz.zagdrath.lime
 
 import xyz.zagdrath.lime.util.CameraMode
 import xyz.zagdrath.lime.util.CameraStream
-import xyz.zagdrath.lime.util.Constants
 import xyz.zagdrath.lime.util.LEDMode
 import xyz.zagdrath.lime.util.LimeMath
 import xyz.zagdrath.lime.util.Pipeline
 import xyz.zagdrath.lime.util.SnapshotMode
+import xyz.zagdrath.lime.util.constants.*
 
 class Lime(tableName: String) {
     private var limeTable: LimeTable
     private lateinit var limeMath: LimeMath
-    private lateinit var constants: Constants
     private lateinit var defaultInstance: Lime
 
     init {
@@ -65,7 +64,7 @@ class Lime(tableName: String) {
     }
 
     fun getLatency(): Double {
-        return (limeTable.latency.getDouble(0.0) + constants.CAPTURE_LATENCY)
+        return (limeTable.latency.getDouble(0.0) + CAPTURE_LATENCY)
     }
 
     fun getShortSideLength(): Double {
