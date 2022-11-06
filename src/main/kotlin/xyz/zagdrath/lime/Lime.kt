@@ -1,14 +1,7 @@
 /*
- * @(#)Lime.kt
- *
  * Copyright (C) 2022 Cody L. Wellman All rights reserved. This work is
  * licensed under the terms of the MIT license which can be found in the
  * root directory of this project.
- *
- * Author: Cody L. Wellman <cody@codexmicro.systems>
- *
- * Created: July 21, 2022
- * Updated: August 10, 2022
  */
 
 package xyz.zagdrath.lime
@@ -16,14 +9,13 @@ package xyz.zagdrath.lime
 import xyz.zagdrath.lime.util.CameraMode
 import xyz.zagdrath.lime.util.CameraStream
 import xyz.zagdrath.lime.util.LEDMode
-import xyz.zagdrath.lime.util.LimeMath
 import xyz.zagdrath.lime.util.Pipeline
 import xyz.zagdrath.lime.util.SnapshotMode
 import xyz.zagdrath.lime.util.constants.*
+import xyz.zagdrath.lime.util.limemath.*
 
 class Lime(tableName: String) {
     private var limeTable: LimeTable
-    private lateinit var limeMath: LimeMath
     private lateinit var defaultInstance: Lime
 
     init {
@@ -56,7 +48,7 @@ class Lime(tableName: String) {
     }
 
     fun getTargetArea(): Double {
-        return limeMath.clampValue((limeTable.targetArea.getDouble(0.0) / 100.0), 0.0, 1.0)
+        return clampValue((limeTable.targetArea.getDouble(0.0) / 100.0), 0.0, 1.0)
     }
 
     fun getTargetSkew(): Double {

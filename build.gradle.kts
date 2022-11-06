@@ -13,6 +13,10 @@ plugins {
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
+
+    maven {
+        url = uri("https://frcmaven.wpi.edu/artifactory/release/")
+    }
 }
 
 dependencies {
@@ -22,7 +26,8 @@ dependencies {
     // Use the Kotlin JDK 8 standard library.
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
-    // This dependency is used internally, and not exposed to consumers on their own compile classpath.
+    // This dependency is used internally, and not exposed to consumers on their own compile
+    // classpath.
     implementation("com.google.guava:guava:31.0.1-jre")
 
     // Use the Kotlin test library.
@@ -34,17 +39,16 @@ dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api("org.apache.commons:commons-math3:3.6.1")
 
-    implementation(files("libs/ntcore-java-2019.4.1.jar"))
+    implementation("edu.wpi.first.ntcore:ntcore-java:2022.4.1")
 }
 
 publishing {
-  publications {
-    create<MavenPublication>("maven") {
-      groupId = "com.github.zagdrath"
-      artifactId = "lime"
-      version = "1.0.0"
-
-      from(components["java"])
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "com.github.zagdrath"
+            artifactId = "lime"
+            version = "1.1.0"
+            from(components["java"])
+        }
     }
-  }
 }
