@@ -23,7 +23,7 @@ repositories {
 
 ```gradle
 dependencies {
-	implementation 'com.github.zagdrath:lime:v1.0.0'
+	implementation 'com.github.zagdrath:lime:v1.1.0'
 }
 ```
 </details>
@@ -43,7 +43,7 @@ repositories {
 
 ```gradle
 dependencies {
-	implementation("com.github.zagdrath:lime:v1.0.0")
+	implementation("com.github.zagdrath:lime:v1.1.0")
 }
 ```
 </details>
